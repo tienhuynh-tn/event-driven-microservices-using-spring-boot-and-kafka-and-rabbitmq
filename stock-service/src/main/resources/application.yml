@@ -15,5 +15,11 @@ spring:
           json:
             trusted:
               packages: "*"
+
+rabbitmq:
+  queue:
+    name:
+      stock: order_stock
+
 server:
   port: 8081

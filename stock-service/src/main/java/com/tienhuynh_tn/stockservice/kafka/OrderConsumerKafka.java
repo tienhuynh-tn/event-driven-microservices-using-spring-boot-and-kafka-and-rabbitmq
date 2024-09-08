@@ -7,9 +7,9 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class OrderConsumer {
+public class OrderConsumerKafka {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(OrderConsumer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(OrderConsumerKafka.class);
 
     @KafkaListener(
             topics = "${spring.kafka.topic.name}",
