@@ -65,4 +65,12 @@ API protocols such as STOMP, MQTT and HTTP.
 Producer is an application that sends messages to the RabbitMQ broker and Consumer is an application that reads messages 
 from the RabbitMQ broker.
 
+### RabbitMQ Core Concepts
 ![](https://www.cloudamqp.com/img/blog/exchanges-bidings-routing-keys.png)
+- **Producer:** An application that sends messages to the RabbitMQ broker, not directly to the consumer. Messages are sent to the broker, which then handles them. 
+- **Consumer:** An application that reads messages from the RabbitMQ broker. Multiple consumers can subscribe to the broker to read messages sent by the producer.
+- **Queue:** A buffer or storage in RabbitMQ that holds messages. Producers send messages to the broker, which stores them in a queue. Consumers then read messages from the queue. Multiple queues can be created in RabbitMQ. 
+- **Message:** The information sent from a producer to a consumer through RabbitMQ. Messages can be in various formats such as strings, JSON, binary, plain text, or HTML. 
+- **Exchange:** Acts as an intermediary between the producer and the queue. Instead of sending messages directly to a queue, producers send them to an exchange, which then routes them to the appropriate queues based on defined rules. 
+- **Routing Key:** A key that an exchange uses to route messages to the appropriate queues. In complex applications with multiple queues, the producer sends a message with a routing key that the exchange uses to determine the correct queue. 
+- **Binding:** A link between a queue and an exchange. Binding is necessary for an exchange to route messages to a queue, and it is established using a routing key.
