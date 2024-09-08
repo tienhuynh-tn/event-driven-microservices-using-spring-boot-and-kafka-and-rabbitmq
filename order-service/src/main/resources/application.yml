@@ -15,7 +15,9 @@ rabbitmq:
   queue:
     name:
       email: order_email
+      stock: order_stock
   binding:
     routing:
       key:
         email: order_email_routing_key
+        stock: order_stock_routing_key
