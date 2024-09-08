@@ -8,3 +8,14 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     topic:
       name: order_topics
+
+rabbitmq:
+  exchange:
+    name: order_exchange
+  queue:
+    name:
+      email: order_email
+  binding:
+    routing:
+      key:
+        email: order_email_routing_key
