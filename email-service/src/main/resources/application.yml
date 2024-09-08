@@ -16,5 +16,10 @@ spring:
             trusted:
               packages: "*"
 
+rabbitmq:
+  queue:
+    name:
+      email: order_email
+
 server:
   port: 8082
