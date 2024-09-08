@@ -1,5 +1,23 @@
 # Event-driven Microservices using Spring Boot and RabbitMQ
 
+## Table of Contents
+- [What is event-drive architecture?](#)
+- [How Event-driven Architecture works and it's advantages](#)
+  - [1. Microservices and Message Broker](#)
+  - [2. Advantages of Event-Driven Architecture](#)
+- [What is RabbitMQ](#)
+  - [1. What is a Message Queue?](#)
+  - [2. What is RabbitMQ?](#)
+  - [3. RabbitMQ Core Concepts](#)
+- [Note on When to use Kafka, and when to use RabbitMQ?](#)
+- [Project Description](#)
+- [Technologies Used](#technologies-used)
+- [Architecture Overview](#architecture-overview)
+- [Setup and Run Instructions](#setup-and-run-instructions)
+- [References](#references)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## What is event-drive architecture?
 Event-driven architecture is a software design pattern in which decoupled applications can asynchronously publish and 
 subscribe to events via an event broker/message broker.
@@ -17,7 +35,7 @@ Event-driven microservices architecture is a design pattern where multiple micro
 through a message broker. This architecture improves flexibility, scalability, and maintainability by decoupling 
 services from one another, enabling them to work independently and communicate via events.
 
-**1. Microservices and Message Broker:**
+### 1. Microservices and Message Broker:
 
 In an event-driven architecture, each microservice has a specific responsibility, such as handling orders, 
 managing stock, or sending emails.
@@ -25,13 +43,11 @@ managing stock, or sending emails.
 Microservices communicate asynchronously by publishing and consuming events through a message broker like RabbitMQ, 
 Apache Kafka, or Apache ActiveMQ.
 
-### How It Works:
-
-When an event (e.g., a customer places an order) occurs, the relevant microservice (e.g., Order Service) creates an event 
+> How It Works: When an event (e.g., a customer places an order) occurs, the relevant microservice (e.g., Order Service) creates an event 
 and publishes it to the message broker. Other microservices (e.g., Stock Service, Email Service) that are subscribed to 
 the message broker consume the event and perform their respective tasks, such as updating stock or sending an order confirmation email.
 
-**2. Advantages of Event-Driven Architecture:**
+### 2. Advantages of Event-Driven Architecture:
 
 - **Flexibility and Maintainability:** Each microservice is responsible for a specific task and can be developed, 
 deployed, and maintained independently. This separation of concerns ensures that changes in one service do not affect others.
@@ -47,7 +63,7 @@ microservices-based applications. It provides clear separation of responsibiliti
 and enhances overall system resilience.
 
 ## What is RabbitMQ
-### What is a Message Queue?
+### 1. What is a Message Queue?
 Message queuing allows applications to communicate by sending messages to each other. The message queue provides temporary
 message storage when the destination program is busy or not connected
 
@@ -55,7 +71,7 @@ A message queue is made up of a producer, a broker (the message queue software),
 
 A message queue provides an asynchronous communication between applications.
 
-### What is RabbitMQ?
+### 2. What is RabbitMQ?
 RabbitMQ is a message queue software (message broker/queue manager) that acts as an intermediary platform where different 
 applications can send and receive messages.
 
@@ -65,7 +81,7 @@ API protocols such as STOMP, MQTT and HTTP.
 Producer is an application that sends messages to the RabbitMQ broker and Consumer is an application that reads messages 
 from the RabbitMQ broker.
 
-### RabbitMQ Core Concepts
+### 3. RabbitMQ Core Concepts
 ![](https://www.cloudamqp.com/img/blog/exchanges-bidings-routing-keys.png)
 - **Producer:** An application that sends messages to the RabbitMQ broker, not directly to the consumer. Messages are sent to the broker, which then handles them. 
 - **Consumer:** An application that reads messages from the RabbitMQ broker. Multiple consumers can subscribe to the broker to read messages sent by the producer.
@@ -87,3 +103,25 @@ and distributed processing. Apache Kafka is commonly used for big data applicati
 > requires high scalability and real-time processing of large volumes of data, Apache Kafka may be a better choice. 
 > It's also worth noting that there are other message brokers and streaming platforms available that may be better 
 > suited for your specific use case. It's important to evaluate your options carefully and choose the one that best meets your requirements.
+
+## Project Description
+- TBU
+
+## Technologies Used
+- TBU
+
+## Architecture Overview
+- TBU
+
+## Setup and Run Instructions
+- TBU
+
+# References
+- Course: [Building Microservices with Spring Boot & Spring Cloud](https://www.udemy.com/course/building-microservices-with-spring-boot-and-spring-cloud/) by [Ramesh Fadatare (Java Guides)](https://www.udemy.com/user/ramesh-fadatare/)
+
+## Contributing
+Contributions are welcome! Please submit a pull request or open an issue to get started.
+
+## License
+
+&copy; 2024 tienhuynh-tn. This project is licensed under the [MIT License](https://github.com/tienhuynh-tn/event-driven-microservices-using-spring-boot-and-kafka-and-rabbitmq/blob/main/LICENSE).
