@@ -56,7 +56,7 @@ public class RabbitMQConfig {
     @Bean
     public Binding orderStockBinding() {
         return BindingBuilder
-                .bind(orderEmailQueue())
+                .bind(orderStockQueue())
                 .to(exchange())
                 .with(orderStockRoutingKey).noargs();
     }
