@@ -1,7 +1,16 @@
 spring:
   application:
     name: stock-service
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: stock
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties.spring.json.trusted.packages: *
+    topic:
+      name: order_topics
 
 server:
   port: 8081
-
