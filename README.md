@@ -1,16 +1,16 @@
 # Event-driven Microservices using Spring Boot and RabbitMQ
 
 ## Table of Contents
-- [What is event-drive architecture?](#)
-- [How Event-driven Architecture works and it's advantages](#)
-  - [1. Microservices and Message Broker](#)
-  - [2. Advantages of Event-Driven Architecture](#)
-- [What is RabbitMQ](#)
-  - [1. What is a Message Queue?](#)
-  - [2. What is RabbitMQ?](#)
-  - [3. RabbitMQ Core Concepts](#)
-- [Note on When to use Kafka, and when to use RabbitMQ?](#)
-- [Project Description](#)
+- [What is event-driven architecture?](#what-is-event-driven-architecture)
+- [How Event-driven Architecture works and it's advantages](#how-event-driven-architecture-works-and-its-advantages)
+  - [1. Microservices and Message Broker](#1-microservices-and-message-broker)
+  - [2. Advantages of Event-Driven Architecture](#2-advantages-of-event-driven-architecture)
+- [What is RabbitMQ](#what-is-rabbitmq)
+  - [1. What is a Message Queue?](#1-what-is-a-message-queue)
+  - [2. What is RabbitMQ?](#2-what-is-rabbitmq)
+  - [3. RabbitMQ Core Concepts](#3-rabbitmq-core-concepts)
+- [Note on When to use Kafka, and when to use RabbitMQ?](#note-on-when-to-use-kafka-and-when-to-use-rabbitmq)
+- [Project Description](#project-description)
 - [Technologies Used](#technologies-used)
 - [Architecture Overview](#architecture-overview)
 - [Setup and Run Instructions](#setup-and-run-instructions)
@@ -18,7 +18,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## What is event-drive architecture?
+## What is event-driven architecture?
 Event-driven architecture is a software design pattern in which decoupled applications can asynchronously publish and 
 subscribe to events via an event broker/message broker.
 
