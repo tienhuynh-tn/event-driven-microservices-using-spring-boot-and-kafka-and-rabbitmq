@@ -45,3 +45,24 @@ This reduces dependencies and makes the architecture more robust.
 > In summary, event-driven architecture is an effective approach for building scalable, flexible, and highly available 
 microservices-based applications. It provides clear separation of responsibilities, allows independent scaling and maintenance, 
 and enhances overall system resilience.
+
+## What is RabbitMQ
+### What is a Message Queue?
+Message queuing allows applications to communicate by sending messages to each other. The message queue provides temporary
+message storage when the destination program is busy or not connected
+
+A message queue is made up of a producer, a broker (the message queue software), and a consumer.
+
+A message queue provides an asynchronous communication between applications.
+
+### What is RabbitMQ?
+RabbitMQ is a message queue software (message broker/queue manager) that acts as an intermediary platform where different 
+applications can send and receive messages.
+
+RabbitMQ originally implements the Advanced Message Queuing Protocol (AMQP). But now RabbitMQ also supports several other 
+API protocols such as STOMP, MQTT and HTTP.
+
+Producer is an application that sends messages to the RabbitMQ broker and Consumer is an application that reads messages 
+from the RabbitMQ broker.
+
+![](https://www.cloudamqp.com/img/blog/exchanges-bidings-routing-keys.png)
